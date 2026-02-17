@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gallery — Old Towne Hall | Crystal Lakes gem of gems</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true">
+          <img src="assets/images/logo-main.webp" alt="">
+        </span>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="venue.html">Venue</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="events.html">Events</a>
+        <a class="active" href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Gallery</h1>
+      <p class="lead">Replace these placeholders with real photos (drop images in /assets and use &lt;img&gt; tags).</p>
+
+      <div class="gallery" style="margin-top:16px;">
+        <div class="ph g1 tall card"></div>
+        <div class="ph g2 card"></div>
+        <div class="ph g3 small card"></div>
+        <div class="ph g4 small card"></div>
+        <div class="ph g5 small card"></div>
+        <div class="ph g6 card"></div>
+      </div>
+
+      <div class="card panel" style="margin-top:16px;">
+        <h2>Want me to wire in real images?</h2>
+        <p>
+          If you give me 6–12 photo filenames (or upload them here), I’ll swap the placeholders for a real responsive gallery.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Book a Tour</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="y"></span> Evermoor Venue.</div>
+      <div><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

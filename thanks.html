@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Thank you — Old Towne Hall | Crystal Lakes gem of gems</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true">
+          <img src="assets/images/logo-main.webp" alt="">
+        </span>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a href="venue.html">Venue</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <div class="card panel">
+        <h1>Thanks!</h1>
+        <p class="lead">We received your message and will get back to you soon.</p>
+        <div class="actions" style="margin-top:14px;">
+          <a class="btn primary" href="index.html">Back to Home</a>
+          <a class="btn" href="gallery.html">View Gallery</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="y"></span> Evermoor Venue.</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

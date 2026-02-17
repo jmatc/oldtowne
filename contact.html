@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact — Old Towne Hall | Crystal Lakes gem of gems</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body class="contact">
+  <header class="topbar container">
+    <div class="brand">
+      <a href="index.html">
+        <span class="logo" aria-hidden="true">
+          <img src="assets/images/logo-main.webp" alt="">
+        </span>
+      </a>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container contact-form">
+      <div class="panel">
+        <h1 class="alt-section-title">
+        Tell us about your event
+          <span></span>
+        </h1>
+        <form class="form" action="https://formspree.io/f/xdalpdrp" method="POST">
+          <div class="field">
+            <label for="full-name">
+              Full name:
+              <input id="full-name" type="text" name="full-name" required autofocus>
+            </label>
+          </div>
+          <div class="field">
+            <label for="email-address">
+              Your email:
+              <input id="email-address" type="email" name="email-address" required>
+            </label>            
+          </div>
+          <div class="field">
+            <label for="event-type">
+              Event Type:
+              <select id="event-type" name="event-type" required>
+                <option value="">Select one…</option>
+                <option>Wedding</option>
+                <option>Fundraiser</option>
+                <option>Corporate</option>
+                <option>Private Party</option>
+                <option>Other</option>
+              </select>
+            </label>
+          </div>
+          <div class="field">
+            <label for="date">
+              Preferred date:
+              <input id="date" type="date" name="date_range">
+            </label>
+          </div>
+          <div class="field">
+            <label for="guest-count">
+              Estimated guest count:
+              <input id="guest-count" type="number" name="guest-count">
+            </label>
+          </div>
+          <label>
+            A little bit about your event:
+            <textarea name="message"></textarea>
+          </label>
+          <button class="btn" type="submit">Send</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>©<span id="y">2026</span> Old Towne Hall. All Rights</div>
+    </div>
+  </footer>
+</body>
+</html>

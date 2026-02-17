@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Our Venue - Old Towne Hall | Crystal Lakes gem of gems</title>
+  <link rel="stylesheet" href="assets/styles.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="container nav">
+      <a class="brand" href="index.html">
+        <span class="logo" aria-hidden="true">
+          <img src="assets/images/logo-main.webp" alt="">
+        </span>
+      </a>
+      <nav class="navlinks" aria-label="Primary">
+        <a href="index.html">Home</a>
+        <a class="active" href="venue.html">Venue</a>
+        <a href="weddings.html">Weddings</a>
+        <a href="events.html">Events</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="section">
+    <div class="container">
+      <h1>Venue</h1>
+      <p class="lead">A bright, neutral space designed for flexibility — beautiful in photos and easy to plan around.</p>
+
+      <div class="split" style="margin-top:16px;">
+        <div class="card panel">
+          <h2>Spaces</h2>
+          <ul>
+            <li>Main hall (reception / seated dinner / stage)</li>
+            <li>Ceremony area (indoor + outdoor options)</li>
+            <li>Bridal suite + prep room</li>
+            <li>Patio / cocktail area</li>
+          </ul>
+        </div>
+        <div class="card panel">
+          <h2>Amenities</h2>
+          <ul>
+            <li>Climate control</li>
+            <li>Accessible entrances + restrooms</li>
+            <li>On-site parking</li>
+            <li>Vendor load-in access</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card panel" style="margin-top:16px;">
+        <h2>Location</h2>
+        <p>
+          Add your real address here. You can embed a Google Map later, but keeping it simple here is fine:
+          “1234 Venue Rd, Your City, ST”.
+        </p>
+        <div class="actions">
+          <a class="btn primary" href="contact.html">Schedule a Tour</a>
+          <a class="btn" href="gallery.html">See Photos</a>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footerRow">
+      <div>© <span id="y"></span> Evermoor Venue.</div>
+      <div><a href="contact.html">Contact</a></div>
+    </div>
+  </footer>
+
+  <script>document.getElementById("y").textContent = new Date().getFullYear();</script>
+  <script src="assets/main.js"></script>
+</body>
+</html>

@@ -94,10 +94,18 @@ img{ max-width:100%; display:block; }
 /* =========================================================
    Topbar / Nav (mobile-first)
    ========================================================= */
-.topbar{
+.topbar{  
   position: sticky;
   top: 0;
   z-index: 500;
+}
+
+.contact {
+  background-color: #000;
+
+  .topbar {
+    position: relative;
+  }
 }
 
 .topbar {
@@ -477,31 +485,65 @@ p.lead{
 .field{
   display:grid;
   gap: 6px;
+  margin-bottom: 5px;
 }
 
-label{
-  font-size: 13px;
-  color: rgba(15,23,42,.70);
+label {
+  color: #878787;
 }
 
 input, textarea, select{
+  font-size: 16px;
   width: 100%;
+  opacity: .65;
   padding: 12px 12px;
   border-radius: var(--radius-sm);
-  border: 1px solid var(--input-border);
+  border: 0 none;
   background: var(--input-bg);
   color: var(--text);
   outline: none;
+  margin-top: 7px;
+
+  &::placeholder {
+    color: #fff;
+  }
 }
 
 input:focus, textarea:focus, select:focus{
   border-color: rgba(15,23,42,.24);
   box-shadow: 0 0 0 4px var(--focus);
+  opacity: 1;
 }
 
 textarea{
   min-height: 140px;
   resize: vertical;
+}
+
+.container.contact-form {
+  margin: 30px auto 0;
+}
+
+.contact-form {
+  .alt-section-title {
+    margin: 0 auto 55px;
+    max-width: 540px;
+  }
+
+  .btn {
+    font-size: 18px;
+    padding: 15px 40px;
+    max-width: 200px;
+  }
+
+  label {
+    color: #e3dfcc;
+  }
+
+  form {
+    max-width: 500px;
+    margin: 0 auto;
+  }
 }
 
 /* Slightly nicer spacing for larger screens */
@@ -510,32 +552,26 @@ textarea{
   input, textarea, select{ padding: 12px 13px; }
 }
 
+form button {
+  border: none;
+}
+
 /* =========================================================
    Footer
    ========================================================= */
 .footer{
   border-top: 1px solid rgba(15,23,42,.10);
   padding: 22px 0 34px;
-  color: rgba(15,23,42,.68);
   font-size: 13px;
-  /* background: rgba(255,255,255,.65); */
-  background: #000
-}
+  background: #000;
+  color: #fff;
+  text-align: center;
 
-.footerRow{
-  display:flex;
-  flex-direction: column; /* mobile */
-  gap: 10px;
-  justify-content: space-between;
-}
-@media (min-width: 600px){
-  .footerRow{
-    flex-direction: row;
-    align-items: center;
-    gap: 12px;
+  a {
+    color: #fff;
   }
 }
-.footer a{ color: var(--accent); }
+
 
 /* =========================================================
    Optional accessibility / quality-of-life
@@ -565,7 +601,7 @@ textarea{
 .homepage-primary {
   /* background-color: #fff; */
   background-color:#000;
-  margin-top: 100vh;
+  margin-top: 87vh;
 }
 
 p {
