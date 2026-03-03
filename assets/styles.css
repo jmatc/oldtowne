@@ -49,7 +49,7 @@
    900px: tablets / small desktops
    1200px: wide desktops
 */
-@media (min-width: 600px){
+/* @media (min-width: 600px){
   :root{
     --pad-x: 22px;
     --section-y: 56px;
@@ -67,7 +67,7 @@
 }
 @media (min-width: 1200px){
   :root{ --pad-x: 30px; }
-}
+} */
 
 /* ---- Base / reset-ish ---- */
 *{ box-sizing:border-box; }
@@ -88,7 +88,7 @@ img{ max-width:100%; display:block; }
 
 .container{
   width: min(var(--max), calc(100% - (var(--pad-x) * 2)));
-  margin-inline:auto;
+  margin: auto;
 }
 
 /* =========================================================
@@ -108,13 +108,6 @@ img{ max-width:100%; display:block; }
   }
 }
 
-.topbar {
-  &.container {
-    padding: 0 40px;
-    width: 1490px;
-  }
-}
-
 .nav{
   padding: 12px 0;
 }
@@ -122,8 +115,6 @@ img{ max-width:100%; display:block; }
 .brand{
   padding-top: 20px;
   text-align: center;
-  width: 500px;
-  margin: 0 auto;
 }
 
 .brand a {
@@ -260,13 +251,18 @@ p.lead{
   padding-top: 50px;
   position: relative;
   top: -160px;
-  /* background-color: #fff; */
   background-color: #000;
   border-radius: 50%;
 }
 
+@media screen and (max-width: 968px) {
+  .hero-card {
+    border-radius: 0;
+    top: 0;
+  }
+}
+
 .alt-section-title {
-    margin: 0 0 50px;
     position: relative;
     text-align: center;
     z-index: 100;
@@ -300,7 +296,8 @@ p.lead{
   }
 
   .alt-section-title {
-    margin: 50px;
+        margin: 50px auto 80px;
+        max-width: 550px;
   }
 }
 
@@ -318,8 +315,32 @@ p.lead{
 
 @media (min-width: 900px){
   .hero{ padding: 64px 0 24px; }
-  /* .heroGrid{ grid-template-columns: 1.2fr .8fr; gap: 24px; } */
-  .hero-card{ padding: 28px; }
+}
+
+
+@media (max-width: 500px) {
+  .brand a {
+    width: 245px;
+  }
+
+  .hero-card {
+    .alt-section-title {
+        margin: 0px auto 60px;
+        font-size: 33px;
+    }
+  }
+
+  .alt-section-title {
+      & span {
+          &:after {
+              top: 21px;
+          }
+      }
+  }
+
+  .home .topbar {
+      top: 30%;
+  }
 }
 
 /* ---- Stats ---- */
@@ -560,7 +581,6 @@ form button {
    Footer
    ========================================================= */
 .footer{
-  border-top: 1px solid rgba(15,23,42,.10);
   padding: 22px 0 34px;
   font-size: 13px;
   background: #000;
@@ -617,8 +637,20 @@ p {
 }
 
 .alt-container {
-  padding-left: 200px;
-  padding-right: 200px;
+  padding-left: 125px;
+  padding-right: 125px;
+  margin: 0 auto;
+  width: 1120px;
+}
+
+@media screen and (max-width: 1200px) {
+  .alt-container {
+
+  padding-left: 25px;
+  padding-right: 25px;
+    max-width: 920px;
+    width: auto;
+  }
 }
 
 .hero-card .actions {
