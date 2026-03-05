@@ -27,26 +27,26 @@
         <form class="form" action="https://formspree.io/f/xdalpdrp" method="POST">
           <div class="field">
             <label for="full-name">
-              Full name:
+              Full name:<span class="ast-red">*</span>
               <input id="full-name" type="text" name="full-name" required autofocus>
             </label>
           </div>
           <div class="field">
             <label for="telephone">
-              Your phone:<br />
+              Your phone:<span class="ast-red">*</span><br />
               <small>Format: 312-555-1212</small>
               <input id="telephone" type="tel" name="telephone" placeholder="312-555-1212" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
             </label>            
           </div>
           <div class="field">
             <label for="email-address">
-              Your email:
+              Your email:<span class="ast-red">*</span>
               <input id="email-address" type="email" name="email-address" required>
             </label>            
           </div>
           <div class="field">
             <label for="event-type">
-              Event Type:
+              Event Type:<span class="ast-red">*</span>
               <select id="event-type" name="event-type" required>
                 <option value="">Select one…</option>
                 <option>Wedding</option>
@@ -59,7 +59,7 @@
           </div>
           <div class="field">
             <label for="date">
-              Preferred date:
+              Preferred date:<span class="ast-red">*</span>
               <input id="date" type="date" name="date_range">
             </label>
           </div>

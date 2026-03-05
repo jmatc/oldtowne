@@ -674,3 +674,7 @@ p {
         margin-left: -175px;
   }
 }
+
+.ast-red {
+  color: #ff0000;
+}
