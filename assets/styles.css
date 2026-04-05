@@ -665,7 +665,7 @@ p {
 
   &:after {
         content: "";
-        width: 50%;
+        width: 345px;
         height: 2px;
         background-color: #333;
         position: absolute;
